@@ -1,0 +1,302 @@
+* {box-sizing: border-box;}
+
+body {
+  font-family: 'Big Shoulders Display', cursive;
+  font-style: normal;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  flex-direction: column;
+  
+
+  
+}
+
+header {
+  background-image: url("./assets/mobile/image-map.png");
+  width: 375px;
+  background-size: cover;
+  background-position: center;
+  background-clip: content-box;
+}
+
+/* .imgmap {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.heads2 {
+
+  display: block;
+  margin-bottom: 478px;
+}
+
+.top-click {
+display: flex;
+}
+
+/*  back to home */
+
+
+
+.back-page {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.back-click {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.back-page:hover .back-arrow {
+  background-color: #151515;
+  z-index: 2;
+}
+.back-page:hover .back {
+  background-color: #D5966C;
+  z-index: 2;
+}
+
+
+.back {
+  background-color: #151515;
+  width: 204px;
+  height: 72px;
+
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 3.36px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+  
+}
+
+.back-arrow {
+  background-color:  #D5966C;
+  width: 56px;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+/* 2nd container */
+
+.bd-location {
+
+  width: 375px;
+  height: 493px;
+  background-color: #151515;
+  padding-top: 45px;
+  padding-right: 16px;
+  padding-left: 16px;
+  z-index: 2;
+  object-fit: cover;
+}
+
+.bd-text {
+  font-size: 50px;
+  font-weight: 900;
+  color: #ffffff;
+  
+}
+
+.bd-text2 {
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 48px;
+  color: #D5966C;
+}
+
+.bd-text3 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 28px;
+  font-family: 'Outfit';
+  margin-top: 20px;
+  font-style: normal;
+
+}
+
+.bd-text4 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 28px;
+  font-family: 'Outfit';
+  margin-top: 20px;
+  font-style: normal;
+}
+
+footer {
+
+  background-color: #D5966C;
+  width: 375px;
+  height: 336px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+
+.footer-text {
+  color: #151515;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  margin-top: 38px;
+  font-family: outfit;
+
+}
+
+.icons {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.fb {
+  cursor: pointer;
+}
+
+.fb path {
+  fill: #151515;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+  body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    flex-direction: column;
+  }
+
+  .top-click {
+    margin-left: 40px;
+  }
+
+  header {
+    background-image: url("./assets/tablet/image-map.png");
+    width: 768px;
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+  }
+
+  .bd-location {
+    width: 768px;
+    height: 436px;
+    display: flex;
+    gap: 70px;
+    padding-top: 90px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+.bd-text {
+  width: 240px;
+}
+.bd-text2 {
+  margin: 0px;
+}
+
+.bd-text4 {
+  width: 398px;
+}
+  .infomap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    width: 768px;
+    height: 216px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-text {
+    display: flex;
+    align-items: center;
+    width: 281px;
+    margin: 0px;
+    margin-right: 70px;
+  }
+
+  .icons {
+    margin: 0px;
+    margin-bottom: 100px;
+  }
+
+  .fee {
+    display: flex;
+    
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+header {
+  background-image: url("./assets/desktop/image-map.png");
+  width: 1440px;
+  background-size: cover;
+  background-position: center;
+  background-clip: content-box;
+}
+
+  .back-click {
+    margin-left: 156px;
+  }
+
+  .midinfo {
+    width: 1440px;
+
+  }
+  .bd-location {
+    padding: 0px;
+    padding-left: 165px;
+    padding-right: 165px;
+    width: 1440px;
+    height: 548px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .bd-text {
+    margin-top: -175px;
+  }
+
+  footer {
+    padding-top: 80px;
+  width: 1440px;
+  padding-left: 165px;
+  padding-right: 165px;
+
+  }
+
+  .footer-text {
+    width: 380px;
+  }
+}
